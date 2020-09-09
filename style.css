@@ -54,6 +54,7 @@ form button:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.5s ease;
 }
 .todo li{    
     flex: 1;
@@ -78,6 +79,41 @@ form button:hover{
 .completed{
     text-decoration: line-through;
     opacity: 0.5;
+}
+.fall{
+    transform: translateY(50px) rotatez(20deg);
+    opacity: 0;
+}
+select{
+   /* -webkit-appearance: none;
+    -moz-appearance: none;*/
+    appearance: none;
+    outline: none;
+    border: none;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+    
+}
+.select{
+    margin: 1rem;    
+    position: relative;
+    overflow: hidden;
+}
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background: orange;
+    padding: 1rem;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after{
+    background-color: #d88771;
+    color:white ;
 }
 
 
