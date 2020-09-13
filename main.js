@@ -66,12 +66,12 @@ const todos = todoList.childNodes;
  todos.forEach(function(todo) {
      switch(e.target.value){
          case "all":
-             todo.style.display = "flex";
+            todo.style.display = "block";
              break;
          case "complete":
-            if(todo.classList.contains("completed")){
+            if (todo.classList.contains("completed")){
                 todo.style.display = "flex";
-            }else{
+            } else{
                 todo.style.display = "none";
             }
          case "incomplete":
